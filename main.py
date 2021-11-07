@@ -126,10 +126,8 @@ async def create_upload_file(file: UploadFile = File(...)):
         f.write(contents)
     files = os.listdir(IMAGEDIR)
     path = f"{IMAGEDIR}{files[len(files)-1]}"
-    if 'test' in path:
-        return {"path": ''}
-    else:
-        return {"path": path}
+    
+    return {"path": path}
 
 @app.get('/image/')
 async def read_random_file():
