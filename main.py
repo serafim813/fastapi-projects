@@ -116,7 +116,7 @@ async def test(item: UserInfo):
         raise HTTPException(status_code=200, detail='Успешно!')
     return z
 
-@app.post("/images/")
+@app.post("/path/images/")
 async def create_upload_file(file: UploadFile = File(...)):
     file.filename = f"{uuid.uuid4()}.jpg"
     contents = await file.read()  # <-- Important!
