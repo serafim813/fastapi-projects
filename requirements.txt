@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+gunicorn
+httptools
+starlette
+random2
+email_validator
+phonenumbers
+pydantic
+urlextract
+python-multipart
