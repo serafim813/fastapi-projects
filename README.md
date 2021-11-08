@@ -3,12 +3,11 @@
 Projects FastAPI via Heroku.
 
 # To run locally
-- python -m venv .venv
-- source .venv/bin/activate
+- git clone https://github.com/serafim813/fastapi-projects.git
 - pip install -r requirements.txt
 
 # Then, run via uvicorn:
-- uvicorn slack:app --reload
+- uvicorn main:app --reload
 
 # To deploy to heroku
 - heroku login  
